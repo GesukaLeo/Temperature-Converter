@@ -3,7 +3,7 @@ from functools import partial
 
 tempVal = "Celsius"
 
-
+#Definitions to cater for my values
 def store_temp(sel_temp):
     global tempVal
     tempVal = sel_temp
@@ -28,6 +28,7 @@ root.resizable(width=False, height=False)
 root.grid_columnconfigure(1, weight=1)
 root.grid_rowconfigure(0, weight=1)
 
+#Assign  the values of the text box for calculation
 numberInput = tk.StringVar()
 var = tk.StringVar()
 
