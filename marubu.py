@@ -1,2 +1,3 @@
 #output my names
-print("marubu Silvester")
+myNames ="Marubu Silvester"
+print("I  am called :",myNames)
