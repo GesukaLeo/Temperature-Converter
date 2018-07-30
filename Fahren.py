@@ -1,6 +1,8 @@
 import tkinter as tk
 from functools import partial
 
+#declare global variables to hold values
+
 tempVal = "Celsius"
 
 #Definitions to cater for my values
