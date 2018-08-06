@@ -6,6 +6,7 @@ print("The factorial of number 5! is = :",fact)
 
 
 #check if its Not a Number NaN
-test = isnan('b')
+test = float('nan')
+x=isnan(test)
 print(test)
-
+print(x)
