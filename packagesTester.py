@@ -1,4 +1,5 @@
 from math import *
+import re
 
 #check if its Not a Number NaN
 test = float('nan')
@@ -36,7 +37,7 @@ print(shopping_List.keys())
 
 #iterate on the dictionary
 for i in shopping_List:
-    print("%s  %2f" %(i, shopping_List[i]))
+    print("%s  %.2f" %(i, shopping_List[i]))
 
 #compute the total of values in the dictionary
 Total =0
@@ -44,3 +45,20 @@ for item in shopping_List:
     Total += shopping_List[item]
 print("Total=",Total)
 
+#Pig latin translator program
+
+original ="anderson"
+pgy = "ay"
+pgy2 = "way"
+
+word = original.lower()
+
+#check for starting letter using regular expressions
+first = word[0]
+if re.match("[^aeiou]*[aeiou]*$", first):
+    newword = word + pgy2
+    print(newword)
+else:
+    newword = word + first + pgy
+    print(newword[1:])
+    
