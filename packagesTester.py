@@ -47,7 +47,7 @@ print("Total=",Total)
 
 #Pig latin translator program
 
-original ="anderson"
+original ="Gesuka"
 pgy = "ay"
 pgy2 = "way"
 
@@ -55,7 +55,7 @@ word = original.lower()
 
 #check for starting letter using regular expressions
 first = word[0]
-if re.match("[^aeiou]*[aeiou]*$", first):
+if (first == "a" or "e" or "i" or "o" or "u"):
     newword = word + pgy2
     print(newword)
 else:
