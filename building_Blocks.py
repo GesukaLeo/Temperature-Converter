@@ -1,3 +1,4 @@
+
 #codes for showing my experience with strings
 
 Quote = "Never ever give up"
@@ -23,3 +24,15 @@ total = 0
 for i in 1, 3, 7:
    total = total + i
    print(total)
+
+
+
+#Lets now work with a simple dictionary
+myShopping_Items ={
+    "Juice": 10.50,
+    "Soda": 60.00,
+    "Delmonte": 300.00,
+    "Tots": 100.00
+}
+
+print(myShopping_Items.get())
